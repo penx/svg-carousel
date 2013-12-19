@@ -50,7 +50,7 @@
 		<svg height="300" id="toreflect" overflow="hidden" style="fill:#FFDE17;overflow:hidden" width="960" x="0">
 			<!-- <rect style="fill:currentColor;" width="400" height="300"/>-->
 			<ellipse id="ball" rx="50" ry="50" style="fill:#ED1C24;" transform="translate(700,250)">
-				<!-- <animate attributeName="cx" dur="3s" values="-500; 0" calcMode="spline" keySplines="0 .25 .5 1"  />-->
+				 <animate attributeName="cx" dur="3s" values="-500; 0" calcMode="spline" keySplines="0 0 .5 1"  />
 				<!-- 
 	 <animateMotion
 	        from="0,-100" to="0,100"
@@ -108,7 +108,7 @@ Where sx is the scaling factor in the x-axis, sy in the y-axis.
 	          <g>
 			    <defs>
 			      <radialGradient id="MyGradient2" gradientUnits="userSpaceOnUse"
-			                      cx="400" cy="-100" r="100%" fx="400" fy="200">
+			                      cx="450" cy="-550" r="150%"  fy="00">
 			        <stop offset="0%" stop-color="#eef3f7"  stop-opacity="0" />
 			        <stop offset="63%" stop-color="#afd2e5"  stop-opacity="0" />
 			        <stop offset="100%" stop-color="#017faf"  stop-opacity="1" />
