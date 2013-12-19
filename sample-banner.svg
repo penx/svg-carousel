@@ -25,12 +25,20 @@
 	<rect x="-200" y="0" style="fill:url(#fadeGrad);" width="960" height="200"/>
  -->
 <g>
-	<svg id="toreflect" x="500"  width="400" height="300" style="fill:#FFDE17;overflow:hidden" overflow="hidden">
+	<svg id="toreflect" x="0"  width="960" height="300" style="fill:#FFDE17;overflow:hidden" overflow="hidden">
 		<!-- <rect style="fill:currentColor;" width="400" height="300"/> -->
-		<ellipse style="fill:#ED1C24;" transform="translate(200,150)" rx="50" ry="50">
+		<ellipse style="fill:#ED1C24;" transform="translate(700,250)" rx="50" ry="50">
+
+	    	<animate attributeName="cy" restart="whenNotActive" dur="2s" calcMode="spline"
+             keySplines="0 .75 .5 1; .5 0 1 .25; 0 .25 .25 1; .5 0 1 .5; 0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1"
+             values="  0;    -45;      0;     -16;      0;     -7;      0;      -3;      0;     -2;      0;      -1; 0"
+             keyTimes="0; 0.2564; 0.5128; 0.6154; 0.6923; 0.7436; 0.7949; 0.8462; 0.8974; 0.9231; 0.9487; 0.9744; 1" />
+
+         	<!-- <animate attributeName="cx" dur="3s" values="-500; 0" calcMode="spline" keySplines="0 .25 .5 1"  /> -->
+<!-- 
 	 <animateMotion
 	        from="0,-100" to="0,100"
-	        dur="1s" fill="freeze"/> 
+	        dur="1s" fill="freeze"/>  -->
 		</ellipse>
 	</svg>
 <!-- 	<rect x="500" y="301" style="fill:#F26522;" width="400" height="99"><text>test</text>
@@ -48,8 +56,8 @@ Where sx is the scaling factor in the x-axis, sy in the y-axis.
  -->
 
  <!-- sx=1, sy=-1, cx=0, cy=300 -->
-		<use xlink:href="#toreflect"  transform="translate(0,600) scale(1 -1)" color="#159" />
-	<rect transform="translate(500,300) " x="" y="0" style="fill:url(#fadeGrad);" width="400" height="300" />
+	<use xlink:href="#toreflect"  transform="translate(0,600) scale(1 -1)" color="#159" />
+	<rect transform="translate(0,300) " x="" y="0" style="fill:url(#fadeGrad);" width="980" height="300" />
 		<!-- <use xlink:href="#toreflect" transform="scale(1 -0.5)" /> -->
 </g>
 <g filter="url(#slidingBlur)">
@@ -79,7 +87,7 @@ Where sx is the scaling factor in the x-axis, sy in the y-axis.
 	<path style="fill:#00A14B;" d="M332.93,126.6h7.92v43.2h13.032v7.2H332.93V126.6z"/>
 	<path style="fill:#00A14B;" d="M365.401,147.84h10.872v7.2h-10.872v14.76h13.68v7.2h-21.6v-50.4h21.6v7.2h-13.68V147.84z"/>
 </g>
-<g filter="url(#slidingBlur)">
+<g>
 	<path style="fill:#7F3F98;" d="M86.703,218.891c0.105,1.953,0.549,3.539,1.332,4.758c1.49,2.281,4.116,3.422,7.879,3.422
 		c1.686,0,3.221-0.25,4.606-0.75c2.679-0.969,4.019-2.703,4.019-5.203c0-1.875-0.567-3.211-1.703-4.008
 		c-1.15-0.781-2.951-1.461-5.403-2.039l-4.519-1.055c-2.952-0.688-5.041-1.445-6.267-2.273c-2.119-1.438-3.179-3.586-3.179-6.445
